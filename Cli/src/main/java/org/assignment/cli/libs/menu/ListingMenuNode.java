@@ -1,5 +1,7 @@
 package org.assignment.cli.libs.menu;
 
+import org.assignment.cli.views.MenuExecNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -36,10 +38,14 @@ public class ListingMenuNode extends MenuNode {
     }
 
     public void listMenu() {
+        if(MenuExecNode.rootNodeExecuted) {
+            this.console.clearScreen();
+        }
         this.displayMenu(this);
         boolean hasHistory = this.lastMenuNode != null;
         this.displayAdditionalMenuOptions(this.subMenus.size(), hasHistory);
         console.println();
+        MenuExecNode.rootNodeExecuted = true;
     }
 
     @Override
@@ -50,8 +56,9 @@ public class ListingMenuNode extends MenuNode {
         boolean hasHistory = this.lastMenuNode != null;
         int exitOption = hasHistory ? subMenuLen + 1 : subMenuLen;
 
-        int choice = -1;
+        int choice;
         while (true) {
+
             this.listMenu();
             choice = this.getChoice(subMenuLen);
             if(choice == -1) continue;

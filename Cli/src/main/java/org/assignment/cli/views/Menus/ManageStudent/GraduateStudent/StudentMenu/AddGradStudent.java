@@ -6,10 +6,9 @@ import org.assignment.cli.libs.console.IConsole;
 import org.assignment.cli.libs.console.InputType;
 import org.assignment.cli.libs.menu.IMenu;
 import org.assignment.cli.libs.menu.MenuNode;
-import org.assignment.core.domains.models.Student;
 import org.assignment.core.domains.models.GraduateStudent;
+import org.assignment.core.domains.models.Student;
 import org.assignment.cli.libs.menu.TerminalMenuNode;
-import org.assignment.core.libs.validator.Validator;
 import org.assignment.core.ports.services.IStudentService;
 
 import java.util.Scanner;

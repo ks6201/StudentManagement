@@ -30,7 +30,6 @@ public class TerminalMenuNode extends MenuNode {
         this.console.print("\nPress enter key to continue...");
         this.scanner.nextLine();
 
-
         this.lastMenuNode.execute(prevNode.lastMenuNode);
     }
 }

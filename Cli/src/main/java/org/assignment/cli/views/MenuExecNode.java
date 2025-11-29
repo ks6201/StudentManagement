@@ -4,6 +4,9 @@ import org.assignment.cli.libs.menu.ListingMenuNode;
 import org.assignment.cli.libs.menu.MenuNode;
 
 public class MenuExecNode extends MenuNode {
+    // A quick check to see whether the root node already ran and the header was shown.
+    public static boolean rootNodeExecuted = false;
+
     private final MenuNode mainMenu;
     private final static int borderLength = 80;
 

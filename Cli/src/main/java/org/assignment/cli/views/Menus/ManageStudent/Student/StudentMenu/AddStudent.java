@@ -7,7 +7,6 @@ import org.assignment.cli.libs.menu.IMenu;
 import org.assignment.cli.libs.menu.MenuNode;
 import org.assignment.cli.libs.menu.TerminalMenuNode;
 import org.assignment.core.domains.models.Student;
-import org.assignment.core.libs.validator.Validator;
 import org.assignment.core.ports.services.IStudentService;
 
 public class AddStudent implements IMenu {

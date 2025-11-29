@@ -1,7 +1,6 @@
 package org.assignment.core.domains.models;
 
 import org.assignment.core.libs.validator.Required.Required;
-import org.assignment.core.libs.validator.Validator;
 
 import java.util.Objects;
 
