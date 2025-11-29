@@ -22,8 +22,6 @@ cd StudentManagement
 mvn clean install
 ```
 
-Here’s a clearer way to include the IDE-specific instructions with your existing command:
-
 ---
 
 ### 4. Run the application
