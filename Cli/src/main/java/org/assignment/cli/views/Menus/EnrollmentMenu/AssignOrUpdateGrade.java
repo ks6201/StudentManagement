@@ -60,7 +60,7 @@ public class AssignOrUpdateGrade implements IMenu {
                                 )
                         );
 
-                enrollment.setGrade(grade);
+                enrollment.setGrade(grade.toUpperCase());
                 enrollment.validate();
                 enrollmentService.assignOrUpdateGrade(enrollment.getEnrollmentId(), grade);
 
